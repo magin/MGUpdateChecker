@@ -11,3 +11,8 @@ And then put this wherever you want to check for updates:
 	[[MGUpdateChecker defaultChecker] checkForUpdates];
 
 A good practice is to put it in your 	‘application:willFinishLaunchingWithOptions:’
+
+#Dependencies
+
+	SHAlertViewBlocks/UIAlertView+SHAlertViewBlocks.h
+	AFNetworking
