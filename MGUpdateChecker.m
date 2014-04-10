@@ -3,7 +3,7 @@
 //  Inbox
 //
 //  Created by Martin Stoyanov on 4/5/14.
-//  Copyright (c) 2014 Emailio. All rights reserved.
+//  Copyright (c) 2014 Magin. All rights reserved.
 //
 
 #import "MGUpdateChecker.h"
@@ -68,9 +68,7 @@
     
     if (!checkingForUpdate) {
         checkingForUpdate = YES;
-        //download plist
-        //parse plist find bundle-version, title <key>
-        //compare currentVersion < bundle-version, if y -> update alert (if install -> open downloadURL in safari) , if no - nothing
+  
         [self.sessionManager GET:self.plistURL parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary *parsedDictionary) {
             NSLog(@"update checker success");
             NSString *plistVersion = parsedDictionary[@"dict"][@"array"][@"dict"][@"dict"][@"string"][1];

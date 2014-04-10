@@ -13,7 +13,7 @@
 #define kMGUpdateCheckerAlertUpdate @"Install"
 #define kMGUpdateCheckerAlertCancel @"Cancel"
 
-#define kMGUpdateCheckerDefaultPlistURL @"https://emailio.com/betabuilds/manifest.plist"
+#define kMGUpdateCheckerDefaultPlistURL @"https://YOUR SERVER HERE/manifest.plist"
 
 @interface MGUpdateChecker : NSObject
 
